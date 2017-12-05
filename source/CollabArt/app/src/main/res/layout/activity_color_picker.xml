@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_margin">
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp"
+        android:text="OK" />
+
+    <TextView
+        android:id="@+id/color_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/black_button"
+        android:layout_marginBottom="30dp"
+        android:layout_toStartOf="@+id/ok"
+        android:text="Current Color:              "
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large.Inverse" />
+
+    <Button
+        android:id="@+id/black_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ok"
+        android:layout_alignStart="@+id/color_text"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="12dp"
+        android:text="Choose Black" />
+
+    <Button
+        android:id="@+id/white_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/black_button"
+        android:layout_alignBottom="@+id/black_button"
+        android:layout_alignEnd="@+id/ok"
+        android:text="Choose White" />
+
+</RelativeLayout>
